@@ -24,7 +24,7 @@ def valid_password(password):
 
 def verify_password(password, verify):
     error = "Passwords do not match"
-    if password == verify:
+    if password == verify and password != '':
         return ''
     else:
         return error
